@@ -1,5 +1,6 @@
 require "minitest/autorun"
 require_relative "add.rb"
+require_relative "sub.rb"
 
 
 class Addition_test < Minitest::Test 
@@ -26,6 +27,10 @@ class Addition_test < Minitest::Test
 
 	def test_1_plus_7_equals_8
 		assert_equal(8, add(1,7))
+	end
+	
+	def test_4_minus_3_equals_1
+		assert_equal(1, sub(4,3))
 	end
 
 end
